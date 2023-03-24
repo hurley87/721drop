@@ -3,7 +3,7 @@ import { useSigner } from 'wagmi';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Box, Button, Input, Stack, Text, Flex, Image } from '@chakra-ui/react';
+import { Box, Input, Stack, Text, Image } from '@chakra-ui/react';
 import toast from 'react-hot-toast';
 import PrimaryButton from '@/components/PrimaryButton';
 
