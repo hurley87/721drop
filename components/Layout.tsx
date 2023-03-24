@@ -35,7 +35,7 @@ const Layout = ({ children }: Props) => {
       <Box p={2} maxW="74em" w="full" mx="auto">
         <Flex justify="space-between">
           <Link fontSize="xl" fontWeight="bold" href="/">
-            721Drop
+            721drop
           </Link>
           <Connect />
         </Flex>
