@@ -11,10 +11,10 @@ export default function Home() {
 
   return (
     <Layout>
-      <Stack gap="1">
+      <Stack gap="1" px="10">
         <Text
-          fontSize="3xl"
-          fontWeight="bolder"
+          fontSize="2xl"
+          fontWeight="black"
           textAlign="center"
           style={{ lineHeight: '120%' }}
         >

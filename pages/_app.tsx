@@ -6,15 +6,21 @@ import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { Toaster } from 'react-hot-toast';
-import { sepolia } from 'wagmi/chains';
+import { mainnet } from 'wagmi/chains';
+
+// const http =
+//   'https://spring-young-tent.ethereum-sepolia.quiknode.pro/828de30c760b7c7568ceabb66fed417ec80799fd/';
+
+const http =
+  'https://clean-tame-gas.quiknode.pro/af85a689127d1541d0fd7e70029e3c2a8203fe3a/';
 
 const { chains, provider } = configureChains(
-  [sepolia],
+  [mainnet],
   [
     jsonRpcProvider({
       priority: 0,
       rpc: () => ({
-        http: 'https://spring-young-tent.ethereum-sepolia.quiknode.pro/828de30c760b7c7568ceabb66fed417ec80799fd/',
+        http,
       }),
     }),
   ]
