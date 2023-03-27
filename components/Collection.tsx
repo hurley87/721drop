@@ -143,7 +143,9 @@ const Collection = ({ address }: Props) => {
         <PrimaryButton
           text="View Transaction"
           onClick={() =>
-            router.push(`https://etherscan.io/tx/${transactionHash}`)
+            router.push(
+              `https://base-goerli.blockscout.com/tx/${transactionHash}`
+            )
           }
         />
       )}
