@@ -64,7 +64,7 @@ const CreatorConnect = ({ image, prompt }: Props) => {
 
       console.log('Contract deployed to:', myNFT.address);
 
-      router.push(`/collection/${myNFT.address}`);
+      router.push(`/collections/${myNFT.address}`);
 
       setIsLoading(false);
     } catch (error) {
